@@ -1,0 +1,32 @@
+#api call for listing student
+###
+GET http://127.0.0.1:8000/student/
+Accept: application/json
+
+
+#api call for creating student
+###
+POST http://127.0.0.1:8000/student/
+Content-Type: application/json
+
+{
+    "name":"Hari",
+    "course":"CSE",
+    "college":"Holy Grace",
+    "email":"hari@gmail.com"
+}
+
+#api call for retrieving a student
+###
+GET http://127.0.0.1:8000/student/1/
+Accept: application/json
+
+#api call for updating a student
+###
+PUT http://127.0.0.1:8000/student/1/
+Content-Type: application/json
+
+{
+    "name":"John",
+    "course":"Python"
+}
